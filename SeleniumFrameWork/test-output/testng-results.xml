@@ -1,70 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="36595" started-at="2019-12-05T14:35:18 IST" finished-at="2019-12-05T14:35:55 IST">
+  <suite name="Default suite" duration-ms="41182" started-at="2019-12-10T10:50:49 IST" finished-at="2019-12-10T10:51:30 IST">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="23640" started-at="2019-12-05T14:35:18 IST" finished-at="2019-12-05T14:35:42 IST">
-      <class name="testcases.BookingPortal">
-        <test-method status="PASS" signature="browserSetup(java.lang.String)[pri:0, instance:testcases.BookingPortal@3a883ce7]" name="browserSetup" is-config="true" duration-ms="7243" started-at="2019-12-05T14:35:18 IST" finished-at="2019-12-05T14:35:25 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="41182" started-at="2019-12-10T10:50:49 IST" finished-at="2019-12-10T10:51:30 IST">
+      <class name="testcases.FaileScreenShot">
+        <test-method status="PASS" signature="browserSetup()[pri:0, instance:testcases.FaileScreenShot@cd2dae5]" name="browserSetup" is-config="true" duration-ms="8320" started-at="2019-12-10T10:50:49 IST" finished-at="2019-12-10T10:50:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.BookingPortal@3a883ce7]" name="login" duration-ms="2686" started-at="2019-12-05T14:35:25 IST" finished-at="2019-12-05T14:35:28 IST">
+        <test-method status="PASS" signature="login()[pri:0, instance:testcases.FaileScreenShot@cd2dae5]" name="login" is-config="true" duration-ms="2762" started-at="2019-12-10T10:50:57 IST" finished-at="2019-12-10T10:51:00 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="search()[pri:0, instance:testcases.BookingPortal@3a883ce7]" name="search" duration-ms="13655" started-at="2019-12-05T14:35:28 IST" finished-at="2019-12-05T14:35:42 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- search -->
-      </class> <!-- testcases.BookingPortal -->
-    </test> <!-- Test1 -->
-    <test name="Test2" duration-ms="12922" started-at="2019-12-05T14:35:42 IST" finished-at="2019-12-05T14:35:55 IST">
-      <class name="testcases.BookingPortal">
-        <test-method status="PASS" signature="browserSetup(java.lang.String)[pri:0, instance:testcases.BookingPortal@2d6eabae]" name="browserSetup" is-config="true" duration-ms="6704" started-at="2019-12-05T14:35:42 IST" finished-at="2019-12-05T14:35:48 IST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserSetup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:testcases.BookingPortal@2d6eabae]" name="login" duration-ms="6132" started-at="2019-12-05T14:35:48 IST" finished-at="2019-12-05T14:35:54 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="FAIL" signature="search()[pri:0, instance:testcases.BookingPortal@2d6eabae]" name="search" duration-ms="27" started-at="2019-12-05T14:35:54 IST" finished-at="2019-12-05T14:35:54 IST">
+        <test-method status="FAIL" signature="search()[pri:0, instance:testcases.FaileScreenShot@cd2dae5]" name="search" duration-ms="30053" started-at="2019-12-10T10:51:00 IST" finished-at="2019-12-10T10:51:30 IST">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Unable to locate element: #txtFrom
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"#txtFrom"}
+  (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-SGTQ0DB', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191016161957, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 13752, moz:profile: C:\Users\Jeemol Jayakumar\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 71f6c5f0-ce7e-4816-94ee-cd8698e80763
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\JEEMOL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63830}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2d131c1f75a5eb9dbd0bd331bbf153e8
 *** Element info: {Using=id, value=txtFrom}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: #txtFrom
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#txtFrom"}
+  (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
 System info: host: 'DESKTOP-SGTQ0DB', ip: '192.168.1.19', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 70.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20191016161957, moz:geckodriverVersion: 0.26.0, moz:headless: false, moz:processID: 13752, moz:profile: C:\Users\Jeemol Jayakumar\A..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 71f6c5f0-ce7e-4816-94ee-cd8698e80763
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 78.0.3904.70 (edb9c9f3de024..., userDataDir: C:\Users\JEEMOL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63830}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 2d131c1f75a5eb9dbd0bd331bbf153e8
 *** Element info: {Using=id, value=txtFrom}
 at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -81,7 +53,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.ja
 at org.openqa.selenium.By$ById.findElement(By.java:188)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at pages.SearchPage.fromAirport(SearchPage.java:13)
-at testcases.BookingPortal.search(BookingPortal.java:58)
+at testcases.FaileScreenShot.search(FaileScreenShot.java:46)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -94,16 +66,29 @@ at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:145)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
-at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
-at java.lang.Thread.run(Unknown Source)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:770)
+at org.testng.TestRunner.run(TestRunner.java:591)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-      </class> <!-- testcases.BookingPortal -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite1 -->
+      </class> <!-- testcases.FaileScreenShot -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

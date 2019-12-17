@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite1]" parallel="classes">
-  <test thread-count="2" name="Test2(failed)" parallel="classes">
-    <parameter name="Browser" value="firefox"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.BookingPortal">
+      <class name="testcases.FaileScreenShot">
         <methods>
+          <include name="login"/>
           <include name="browserSetup"/>
           <include name="search"/>
         </methods>
-      </class> <!-- testcases.BookingPortal -->
+      </class> <!-- testcases.FaileScreenShot -->
     </classes>
-  </test> <!-- Test2(failed) -->
-</suite> <!-- Failed suite [Suite1] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

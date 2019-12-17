@@ -1,4 +1,5 @@
 package testcases;
+import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -11,10 +12,11 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+
 import pages.LoginPage;
 import pages.SearchPage;
 
-public class BookingPortal {
+public class BookingPortal{
 	
 	static WebDriver driver=null;
 	WebDriverWait wait;
@@ -40,7 +42,7 @@ public class BookingPortal {
 		 	}
 		}
 		@Test
-		public void login() throws InterruptedException
+		public void login() throws InterruptedException, IOException
 		{
 		driver.get("http://stagingportalf.oneviewitsolutions.com/login/Oneview/");
 		LoginPage.agencyCode(driver).sendKeys("AGY75");
@@ -53,7 +55,7 @@ public class BookingPortal {
 		}
 		
 		@Test
-		public void search()
+		public void search() throws IOException, InterruptedException
 		{
 		SearchPage.fromAirport(driver).sendKeys("AUH");
 		//wait.until(ExpectedConditions.elementToBeClickable(SearchPage.fromAirport(driver)));
